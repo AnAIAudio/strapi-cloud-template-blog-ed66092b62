@@ -16,12 +16,10 @@
       "type": "string"
     },
     "description": {
-      "type": "text",
-      "maxLength": 80
+      "type": "text"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
+    "writtenBy": {
+      "type": "text"
     },
     "cover": {
       "type": "media",
@@ -29,17 +27,9 @@
       "required": false,
       "allowedTypes": ["images", "files", "videos"]
     },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "articles"
-    },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "articles"
+    "coverCaption": {
+      "type": "text",
+      "required": false
     },
     "blocks": {
       "type": "dynamiczone",
