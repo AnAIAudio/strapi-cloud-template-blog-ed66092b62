@@ -26,6 +26,14 @@
     "description": {
       "type": "text"
     },
+    "content": {
+      "type": "text",
+      "required": false
+    },
+    "body": {
+      "type": "richtext",
+      "required": false
+    },
     "writtenBy": {
       "type": "text"
     },
@@ -48,6 +56,12 @@
     "blocks": {
       "type": "dynamiczone",
       "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+    },
+    "customDate": {
+      "type": "date",
+      "required": false,
+      "unique": false,
+      "private": false
     }
   }
 }
